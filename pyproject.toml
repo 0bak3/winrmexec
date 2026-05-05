@@ -28,12 +28,15 @@
   ]
   dependencies = [
     "impacket>=0.13.0",
-    "requests>=2.30.0",
+    "requests>=2.30.0"
+  ]
+
+[project.optional-dependencies]
+  interactive = [
     "prompt_toolkit>=3.0.0",
     "requests-ntlm>=1.2.0",
-    "requests-kerberos>=0.14.0",
-    "pyreadline3; platform_system == 'Windows'"
-  ]
+    "requests-kerberos>=0.14.0"
+]
 
 [project.urls]
   Homepage = "https://github.com/ozelis/winrmexec"
